@@ -1,0 +1,1220 @@
+<!DOCTYPE html >
+   <html class="scroll-smooth" lang="en"><head>
+       <head>
+        
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SmartMart | Premium E-Commerce Experience</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter for clean typography -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#49225B',
+              primary: '#6E3482',
+              accent: '#A56ABD',
+              light: '#E7DBEF',
+              bg: '#F5EBFA',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-animations">
+    .product-card:hover .quick-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .mega-menu {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .group:hover .mega-menu {
+      display: block;
+      opacity: 1;
+    }
+    /* Custom Scrollbar for premium feel */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F5EBFA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #A56ABD;
+      border-radius: 4px;
+    }
+  </style>
+ <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        
+       </head>
+      <body>
+         <div id="page" class="site">
+            <aside class="site-off desktop-hide">
+                <div class="off-canvas">
+                    <div class="canvas-head">
+                    <div class="logo">
+                        <a href="/">
+                            <span class="circle">
+                                </span>
+                           <b>.SmartMart</b> </a>
+                        </div> 
+                        <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div> 
+                    <div class="departments"></div>
+                    <nav></nav>
+                    <div class="thetop-nav"></div>
+                </div>
+            </aside>
+            <header>
+                <div class="header-top mobile-hide">
+                    <div class="container">
+                        <div class="wrapper flexitem">
+                            <div class="left">
+                                <ul class="flexitem main-links">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Fetured Products</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                </ul>
+                    
+        
+                            </div>
+                            <div class="right">
+                                <ul class="flexitem main-links">
+                               
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Order tracking </a></li>
+                                    <li><a href="#">USD<span class ="icon-small"><i class="ri-arrow-down-double-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">USD</a></li>
+                                        <li><a href="#">EURO</a></li>
+                                        <li><a href="#">GPD</a></li>
+                                        <li><a href="#">IDR</a></li>
+                                    </ul>
+                                </li>
+                                    <li><a href="#">English<span class="icon-small"><i class="ri-arrow-down-double-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">English</a></li>
+                                        <li><a href="#">German</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">Hindi</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <!--header top-->
+            <div class="header-nav">
+
+                <div class="container">
+                    <div class="wrapper flexitem">
+                       
+                  <div class="left flexitem">
+                    <a href="#" class="trigger desktop-hide">
+                        <span class="i ri-menu-2-line"></span></a>
+                    <div class="logo">
+                        <a href="/">
+                            <span class="circle">
+                                </span>
+                           <b>.SmartMart</b> </a>
+                        </div> 
+                    <nav class="mobile-hide">
+                        <ul class="flexitem second-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li class="has-mega">
+                                <a href="#">Women</a>
+                                 <!-- <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>-->
+                                 <div class="mega">
+                                    <div class="wrapper">
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4>Women's Clothing</h4>
+                                                <ul>
+                                                    <li><a href="#">Dresses</a></li>
+                                                    <li><a href="#">Top & Tees</a></li>
+                                                    <li><a href="#">Jackets & Coats</a></li>
+                                                    <li><a href="#">Pants & Capris</a></li>
+                                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    
+                              
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4>Jewelry</h4>
+                                                <ul>
+                                                    <li><a href="#">Bags & Purses</a></li>
+                                                    <li><a href="#">Rings</a></li>
+                                                    <li><a href="#">Necklaces</a></li>
+                                                    <li><a href="#">Earrings</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4>Beauty</h4>
+                                                <ul>
+                                                    <li><a href="">Bath Accessories</a></li>
+                                                    <li><a href="">Makeup & Cosmetics</a></li>
+                                                    <li><a href="">Skin care</a></li>
+                                                    <li><a href="">Hair care</a></li>
+                                                    <li><a href="">Fragrances</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flexcol products">
+                                            <div class="row">
+                                                <div class="media">
+                                                   
+                                                     <div class="gallery">
+                                                       <img src="C:\Users\sanja\OneDrive\Desktop\PRO\explore2.jpg" alt="a wolf">
+                                                        <img src="C:\Users\sanja\OneDrive\Desktop\PRO\heels.jpg" alt="a lioness">
+                                                         </div> 
+                                                </div>
+                                                <div class="text-content"></div>
+                                                <h4 class="trending-text">Trending</h4>
+                                                <div class="liquid-morph-container">
+                                          <div class="liquid-morph-element">
+                                             <span>EXPLORE</span>
+                                                          </div>
+                                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                
+                            </li>
+                             <li class="has-mega">
+                            <a href="#">Men</a>
+                             <div class="mega">
+                                    <div class="wrapper">
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4>Men's Clothing</h4>
+                                                <ul>
+                                                    <li><a href="#">Tshirt</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Polo Shirts</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                    <li><a href="#">Hoodies & Sweatshirts</a>
+                                                        <li><a href="#">Suits & Blazers</a></li>
+                                                    <li><a href="#">Gym Wear</a></li>
+                                                    <li><a href="#">Jackets & Coats</a></li>
+                                                    <li><a href="#">Pants/Trousers</a></li>
+                                                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    
+                              
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4>Men's Accessories</h4>
+                                                <ul>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Wallets</a></li>
+                                                    <li><a href="#">Belts</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Hats & Caps</a></li>
+                                                    <li><a href="#">Backpacks</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4>Grooming</h4>
+                                                <ul>
+                                                    <li><a href="">Beard Care</a></li>
+                                                    <li><a href="">Face Wash</a></li>
+                                                    <li><a href="">Skin care</a></li>
+                                                    <li><a href="">Hair care</a></li>
+                                                    <li><a href="">Fragrances</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                         
+                                        <div class="flexcol products">
+                                            <div class="row">
+                                                <div class="media">
+                                               
+                                                     <div class="gallery">
+                                                       <img src="C:\Users\sanja\OneDrive\Desktop\PRO\ex2.jpg" alt="a wolf">
+                                                        <img src="C:\Users\sanja\OneDrive\Desktop\PRO\ex.jpg" alt="a lioness">
+                                                         </div> 
+                                                </div>
+                                                <div class="text-content"></div>
+                                                <h4 class="trending-text">Trending</h4>
+                                                <div class="liquid-morph-container">
+                                          <div class="liquid-morph-element">
+                                             <span>EXPLORE</span>
+                                                          </div>
+                                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Sports
+                                 
+                                </a></li>
+                        </ul>
+                    </nav> 
+                  </div>
+                  <div class="right"></div>
+                  <!--cart search-->
+                  <ul class="flexitem second-links">
+                    <li class="mobile-hide"><a href="#">
+                        <div class="icon-large"><i class="ri-heart-line"></i></div>
+                        <div class="fly-item"><span class="item-number"></span></div>
+                    </a></li>
+                    <li><a href="#" class="iscart">
+                        <div class="icon-large">
+                            <i class="ri-shopping-cart-line"></i>
+                            <div class="fly-item"><span class="item-number"></span></div>
+                        </div>
+                        <div class="icon-text">
+                            <div class="mini-text">Total</div>
+                            <div class="cart-total">$0.00</div>
+                        </div>
+                    </a></li>
+                  </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">All Categories</div>
+                               
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                    </a>
+                                </div>
+                               
+
+                               
+                              <!-- <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li class="has-child beauty">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-emotion-fill"></i></div>
+                                                Beauty
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="has-child electronics">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+                                                Electronics
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="has-child ">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
+                                                Men's Fashion
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="has-child homekit">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-emotion-fill"></i></div>
+                                               Home & Kitchen
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>-->
+     <div class="dpt-menu">
+        <ul class="second-links">
+
+        <li class="has-child">
+        <a href="#">
+        <div class="icon-large"><i class="ri-emotion-fill"></i></div>
+Beauty
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+
+<ul class="sub-menu">
+<li><a href="#">Makeup</a></li>
+<li><a href="#">Skincare</a></li>
+<li><a href="#">Hair Care</a></li>
+<li><a href="#">Perfumes</a></li>
+</ul>
+
+</li>
+
+
+<li class="has-child">
+<a href="#">
+<div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+Electronics
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+
+<ul class="sub-menu">
+<li><a href="#">Mobile Phones</a></li>
+<li><a href="#">Laptops</a></li>
+<li><a href="#">Headphones</a></li>
+<li><a href="#">Smart Watch</a></li>
+</ul>
+
+</li>
+<li class="has-child">
+<a href="#">
+<div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+Electronics
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+
+<ul class="sub-menu">
+<li><a href="#">Mobile Phones</a></li>
+<li><a href="#">Laptops</a></li>
+<li><a href="#">Headphones</a></li>
+<li><a href="#">Smart Watch</a></li>
+</ul>
+
+</li>
+
+<li class="has-child">
+<a href="#">
+<div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+Electronics
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+
+<ul class="sub-menu">
+<li><a href="#">Mobile Phones</a></li>
+<li><a href="#">Laptops</a></li>
+<li><a href="#">Headphones</a></li>
+<li><a href="#">Smart Watch</a></li>
+</ul>
+
+</li>
+<li class="has-child">
+<a href="#">
+<div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+Electronics
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+
+<ul class="sub-menu">
+<li><a href="#">Mobile Phones</a></li>
+<li><a href="#">Laptops</a></li>
+<li><a href="#">Headphones</a></li>
+<li><a href="#">Smart Watch</a></li>
+</ul>
+
+</li>
+
+
+
+<li class="has-child">
+<a href="#">
+<div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
+Men's Fashion
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+
+<ul class="sub-menu">
+<li><a href="#">Shirts</a></li>
+<li><a href="#">Jeans</a></li>
+<li><a href="#">Shoes</a></li>
+<li><a href="#">Watches</a></li>
+</ul>
+
+</li>
+
+
+<li class="has-child">
+<a href="#">
+<div class="icon-large"><i class="ri-emotion-fill"></i></div>
+Women's Fashion
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+
+<ul class="sub-menu">
+<li><a href="#">Dresses</a></li>
+<li><a href="#">Handbags</a></li>
+<li><a href="#">Shoes</a></li>
+<li><a href="#">Jewelry</a></li>
+</ul>
+
+</li>
+<li class="has-child">
+<a href="#">
+<div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
+Home and kitchen
+<div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+</a>
+<ul class="sub-menu">
+<li><a href="#">Makeup</a></li>
+<li><a href="#">Skincare</a></li>
+<li><a href="#">Hair Care</a></li>
+<li><a href="#">Perfumes</a></li>
+</ul>
+
+</li>
+
+
+
+<!--
+<div class="mega">
+    <div class="flexcol">
+        <div class="row">
+            <h4><a href="#">Kitchen and dinning</a></h4>
+            <ul>
+                <li><a href="#">e</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">e</a></li>
+                <li><a href="#">d</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <h4><a href="#">Living</a></h4>
+            <ul>
+                <li><a href="#">e</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">e</a></li>
+                <li><a href="#">d</a></li>
+            </ul>
+        </div>
+    </div>
+  <div class="flexcol">
+    <div class="row">
+        <h4><a href="#"> bed & bath</a></h4>
+        <ul>
+                <li><a href="#">e</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">e</a></li>
+                <li><a href="#">d</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <h4><a href="#">utility</a></h4>
+            <ul>
+                <li><a href="#">ergre5y</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">e</a></li>
+                <li><a href="#">d</a></li>
+            </ul>
+        </div>
+    </div>
+    
+  </div>-->
+  </div>
+
+  </ul>
+   </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Search for products">
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </header>
+            <!--header-->
+            <main>
+                <!-- Slider main container -->
+
+                <div class="slider">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="myslider swiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <div class="image object-cover">
+                                                <img src="C:\Users\sanja\OneDrive\Desktop\PRO\ttt3.jpg" alt="">
+                                            </div>
+                                            <div class="text-content flexcol">
+                                                <h4>shoes Fashion</h4>
+                                                <h2>come and get it!<br><strong>BRAND NEW SHOES</strong></h2>
+                                                <a href="#" class="primary-button">shop now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <div class="image object-cover">
+                                                <img src="C:\Users\sanja\OneDrive\Desktop\PRO\ttt4.jpg" alt="">
+                                            </div>
+                                            <div class="text-content flexcol">
+                                                <h4>shoes Fashion</h4>
+                                                <h2>come and get it!<br><strong>BRAND NEW SHOES</strong></h2>
+                                                <a href="#" class="primary-button">shop now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <div class="image object-cover">
+                                                <img src="C:\Users\sanja\OneDrive\Desktop\PRO\ttt1.jpg" alt="">
+                                            </div>
+                                            <div class="text-content flexcol">
+                                                <h4>shoes Fashion</h4>
+                                                <h2>come and get it!<br><strong>BRAND NEW SHOES</strong></h2>
+                                                <a href="#" class="primary-button">shop now</a>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <div class="image object-cover">
+                                                <img src="C:\Users\sanja\OneDrive\Desktop\PRO\tttt2.jpg" alt="">
+                                            </div>
+                                            <div class="text-content flexcol">
+                                                <h4>shoes Fashion</h4>
+                                                <h2>come and get it!<br><strong>BRAND NEW SHOES</strong></h2>
+                                                <a href="#" class="primary-button">shop now</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                 
+                                    </div>
+                                       <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brands">
+                        <div class="container">
+                            <div class="wrapper flexitem">
+                                <div class="item">
+                                    <a href="#"><img src="C:\Users\sanja\OneDrive\Desktop\PRO\logo1.jpg" alt="">
+                                    </a>
+                                </div>
+                                 <div class="item">
+                                    <a href="#"><img src="C:\Users\sanja\OneDrive\Desktop\PRO\logo2.jpg" alt="">
+                                    </a>
+                                </div>
+                                 
+                                 
+                                 <div class="item">
+                                    <a href="#"><img src="C:\Users\sanja\OneDrive\Desktop\PRO\logo6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="C:\Users\sanja\OneDrive\Desktop\PRO\logo7.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="C:\Users\sanja\OneDrive\Desktop\PRO\logo8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="C:\Users\sanja\OneDrive\Desktop\PRO\logo9.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN: TrendingProducts -->
+<section class="py-16 bg-white" id="trending">
+<div class="container mx-auto px-4 lg:px-8">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl font-bold text-brand-dark mb-2">Trending Products</h2>
+<div class="h-1 w-20 bg-brand-primary"></div>
+</div>
+<div class="hidden sm:flex space-x-6 text-sm font-semibold uppercase tracking-wider text-gray-400">
+<a class="text-brand-dark border-b-2 border-brand-dark" href="#">Latest</a>
+
+</div>
+</div>
+<!-- Product Grid - Structure for Loop -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljM6fx9-cF8YD4zONWMimw9KGfJ5ukIX2EWsEtPvntvJibt73cVW7LbYjUzFIr25zIKLqknRNVWIioyvFp8YfSm9dl3n3DdXux3LSF-4ui6pqYIPbIP__RbazU9j3qivt012DnouYshu5WwDYcKYUSLeFfPVt_DdKwUFhdRFIDgeQEikuEBjQAGVt6_ACh4dt6-6jcGg6jm46VqhWHO0q_mBiRW87Dhf0u5p0Cc7xSkldXs7n-LlgU1JbbpIME4yrSEZee6s3vzL-"/>
+<!-- Hover Overlay -->
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+<div class="absolute top-3 left-3">
+<span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">-15%</span>
+</div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<svg class="h-5 w-5 text-brand-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<!-- Stars -->
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(42)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">Smart Echo Speaker v4</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$79.00</span>
+<span class="text-xs text-gray-400 line-through">$95.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljM6fx9-cF8YD4zONWMimw9KGfJ5ukIX2EWsEtPvntvJibt73cVW7LbYjUzFIr25zIKLqknRNVWIioyvFp8YfSm9dl3n3DdXux3LSF-4ui6pqYIPbIP__RbazU9j3qivt012DnouYshu5WwDYcKYUSLeFfPVt_DdKwUFhdRFIDgeQEikuEBjQAGVt6_ACh4dt6-6jcGg6jm46VqhWHO0q_mBiRW87Dhf0u5p0Cc7xSkldXs7n-LlgU1JbbpIME4yrSEZee6s3vzL-"/>
+<!-- Hover Overlay -->
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+<div class="absolute top-3 left-3">
+<span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">-15%</span>
+</div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<svg class="h-5 w-5 text-brand-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<!-- Stars -->
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(42)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">Smart Echo Speaker v4</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$79.00</span>
+<span class="text-xs text-gray-400 line-through">$95.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+<!-- Product Card 1 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljM6fx9-cF8YD4zONWMimw9KGfJ5ukIX2EWsEtPvntvJibt73cVW7LbYjUzFIr25zIKLqknRNVWIioyvFp8YfSm9dl3n3DdXux3LSF-4ui6pqYIPbIP__RbazU9j3qivt012DnouYshu5WwDYcKYUSLeFfPVt_DdKwUFhdRFIDgeQEikuEBjQAGVt6_ACh4dt6-6jcGg6jm46VqhWHO0q_mBiRW87Dhf0u5p0Cc7xSkldXs7n-LlgU1JbbpIME4yrSEZee6s3vzL-"/>
+<!-- Hover Overlay -->
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+<div class="absolute top-3 left-3">
+<span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">-15%</span>
+</div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<svg class="h-5 w-5 text-brand-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<!-- Stars -->
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(42)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">Smart Echo Speaker v4</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$79.00</span>
+<span class="text-xs text-gray-400 line-through">$95.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+<!-- Product Card 1 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljM6fx9-cF8YD4zONWMimw9KGfJ5ukIX2EWsEtPvntvJibt73cVW7LbYjUzFIr25zIKLqknRNVWIioyvFp8YfSm9dl3n3DdXux3LSF-4ui6pqYIPbIP__RbazU9j3qivt012DnouYshu5WwDYcKYUSLeFfPVt_DdKwUFhdRFIDgeQEikuEBjQAGVt6_ACh4dt6-6jcGg6jm46VqhWHO0q_mBiRW87Dhf0u5p0Cc7xSkldXs7n-LlgU1JbbpIME4yrSEZee6s3vzL-"/>
+<!-- Hover Overlay -->
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+<div class="absolute top-3 left-3">
+<span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">-15%</span>
+</div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<svg class="h-5 w-5 text-brand-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<!-- Stars -->
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(42)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">Smart Echo Speaker v4</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$79.00</span>
+<span class="text-xs text-gray-400 line-through">$95.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+<!-- Product Card 1 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljM6fx9-cF8YD4zONWMimw9KGfJ5ukIX2EWsEtPvntvJibt73cVW7LbYjUzFIr25zIKLqknRNVWIioyvFp8YfSm9dl3n3DdXux3LSF-4ui6pqYIPbIP__RbazU9j3qivt012DnouYshu5WwDYcKYUSLeFfPVt_DdKwUFhdRFIDgeQEikuEBjQAGVt6_ACh4dt6-6jcGg6jm46VqhWHO0q_mBiRW87Dhf0u5p0Cc7xSkldXs7n-LlgU1JbbpIME4yrSEZee6s3vzL-"/>
+<!-- Hover Overlay -->
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+<div class="absolute top-3 left-3">
+<span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">-15%</span>
+</div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<svg class="h-5 w-5 text-brand-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<!-- Stars -->
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(42)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">Smart Echo Speaker v4</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$79.00</span>
+<span class="text-xs text-gray-400 line-through">$95.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+<!-- Product Card 1 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljM6fx9-cF8YD4zONWMimw9KGfJ5ukIX2EWsEtPvntvJibt73cVW7LbYjUzFIr25zIKLqknRNVWIioyvFp8YfSm9dl3n3DdXux3LSF-4ui6pqYIPbIP__RbazU9j3qivt012DnouYshu5WwDYcKYUSLeFfPVt_DdKwUFhdRFIDgeQEikuEBjQAGVt6_ACh4dt6-6jcGg6jm46VqhWHO0q_mBiRW87Dhf0u5p0Cc7xSkldXs7n-LlgU1JbbpIME4yrSEZee6s3vzL-"/>
+<!-- Hover Overlay -->
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+<div class="absolute top-3 left-3">
+<span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">-15%</span>
+</div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<svg class="h-5 w-5 text-brand-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<!-- Stars -->
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(42)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">Smart Echo Speaker v4</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$79.00</span>
+<span class="text-xs text-gray-400 line-through">$95.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDSAKkS03407aj3QwrUZB6jLCaCdl_aBl6OIkJf9OgP-pWU0Gy8oR2zIL1X_Qxk1xt01l6fhbrI-hzqa4zWJhTz6Z11mKkyTXd_wq97Ay2oZAx1wkGVzJDGo20iZFewIR5Jm3l8WEHlIEuBXcudXSMGXTp6Tr8K0D519O6jl5rCKh_tphP8erCsCWMdVsDzheP-nedlaj8dtGJBgcRFEQxI6FoaaegdGnbtehJLfDlOGAHrT54S-4YDpfndY5Ch2v-FW9yAwnK8whP"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current text-gray-300" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(18)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">360 Security Pro</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$149.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="product-card group" data-purpose="product-item">
+<div class="relative overflow-hidden rounded-xl aspect-square bg-brand-bg">
+<img alt="Product" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" src="C:\Users\sanja\OneDrive\Desktop\PRO\ttt4.jpg"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white/90 backdrop-blur py-2.5 rounded-lg text-xs font-bold text-brand-dark shadow-lg hover:bg-brand-primary hover:text-white transition-all uppercase">Quick View</button>
+</div>
+</div>
+<div class="mt-4 px-2">
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-yellow-400">
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewbox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">(256)</span>
+</div>
+<h3 class="text-sm font-semibold text-gray-800 hover:text-brand-primary cursor-pointer transition-colors">PureAudio Studio NC</h3>
+<div class="mt-1 flex items-center gap-2">
+<span class="text-brand-dark font-bold">$299.00</span>
+</div>
+<button class="mt-4 w-full border border-brand-light text-brand-dark py-2 text-xs font-bold rounded hover:bg-brand-dark hover:text-white transition-all uppercase tracking-tight">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TrendingProducts -->
+                   
+                    <div class="features">
+                        <div class="container">
+                            <div class="wrapper">
+                                <div class="column">
+                                    <div class="sectop flexitem">
+                                    
+                                        <div class="second-links">
+                                            <a href="#" class="view-all">View all<i class="ri-arrow-right-line"></i></a></div>
+                                    </div>
+                                    <div class="products main flexwrap">
+
+
+<section class="py-20 bg-gray-50/50" id="trending">
+    <div class="container mx-auto px-6">
+        <div class="flex items-end justify-between mb-12">
+            <div>
+                <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-3">Trending Products</h2>
+                <div class="h-1.5 w-16 bg-blue-600 rounded-full"></div>
+            </div>
+            <a href="featured-products.html" class="group flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition-colors">
+                View All 
+                <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-6">
+            
+            <div class="group relative bg-white rounded-2xl p-4 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-transparent hover:border-gray-100">
+                <div class="relative overflow-hidden rounded-xl aspect-[4/5] bg-gray-100">
+                    <img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="C:\Users\sanja\OneDrive\Desktop\PRO\mod1.jpg"/>
+                    
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">-15%</span>
+                    </div>
+
+                    <div class="absolute top-3 right-[-50px] group-hover:right-3 transition-all duration-300 flex flex-col gap-2">
+                        <button class="p-2.5 bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/20 to-transparent">
+                        <button class="w-full bg-white/95 backdrop-blur-md py-3 rounded-xl text-xs font-bold text-gray-900 shadow-xl hover:bg-gray-900 hover:text-white transition-all uppercase tracking-tighter">
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <div class="flex justify-center text-yellow-400 mb-2">
+                        <span class="text-xs font-bold text-gray-400 mr-2 mt-0.5">4.8</span>
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+                        </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Smart Echo Speaker v4</h3>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="text-xl font-black text-gray-900">$79.00</span>
+                        <span class="text-sm text-gray-400 line-through">$95.00</span>
+                    </div>
+                    
+                    <button class="mt-5 w-full bg-gray-50 text-gray-900 py-3 rounded-xl text-sm font-bold border border-gray-100 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="group relative bg-white rounded-2xl p-4 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-transparent hover:border-gray-100">
+                <div class="relative overflow-hidden rounded-xl aspect-[4/5] bg-gray-100">
+                    <img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="C:\Users\sanja\OneDrive\Desktop\PRO\mod2.jpg"/>
+                    
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">-15%</span>
+                    </div>
+
+                    <div class="absolute top-3 right-[-50px] group-hover:right-3 transition-all duration-300 flex flex-col gap-2">
+                        <button class="p-2.5 bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/20 to-transparent">
+                        <button class="w-full bg-white/95 backdrop-blur-md py-3 rounded-xl text-xs font-bold text-gray-900 shadow-xl hover:bg-gray-900 hover:text-white transition-all uppercase tracking-tighter">
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <div class="flex justify-center text-yellow-400 mb-2">
+                        <span class="text-xs font-bold text-gray-400 mr-2 mt-0.5">4.8</span>
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+                        </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Smart Echo Speaker v4</h3>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="text-xl font-black text-gray-900">$79.00</span>
+                        <span class="text-sm text-gray-400 line-through">$95.00</span>
+                    </div>
+                    
+                    <button class="mt-5 w-full bg-gray-50 text-gray-900 py-3 rounded-xl text-sm font-bold border border-gray-100 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="group relative bg-white rounded-2xl p-4 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-transparent hover:border-gray-100">
+                <div class="relative overflow-hidden rounded-xl aspect-[4/5] bg-gray-100">
+                    <img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="C:\Users\sanja\OneDrive\Desktop\PRO\mod3.jpg"/>
+                    
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">-15%</span>
+                    </div>
+
+                    <div class="absolute top-3 right-[-50px] group-hover:right-3 transition-all duration-300 flex flex-col gap-2">
+                        <button class="p-2.5 bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/20 to-transparent">
+                        <button class="w-full bg-white/95 backdrop-blur-md py-3 rounded-xl text-xs font-bold text-gray-900 shadow-xl hover:bg-gray-900 hover:text-white transition-all uppercase tracking-tighter">
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <div class="flex justify-center text-yellow-400 mb-2">
+                        <span class="text-xs font-bold text-gray-400 mr-2 mt-0.5">4.8</span>
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+                        </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Smart Echo Speaker v4</h3>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="text-xl font-black text-gray-900">$79.00</span>
+                        <span class="text-sm text-gray-400 line-through">$95.00</span>
+                    </div>
+                    
+                    <button class="mt-5 w-full bg-gray-50 text-gray-900 py-3 rounded-xl text-sm font-bold border border-gray-100 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="group relative bg-white rounded-2xl p-4 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-transparent hover:border-gray-100">
+                <div class="relative overflow-hidden rounded-xl aspect-[4/5] bg-gray-100">
+                    <img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="C:\Users\sanja\OneDrive\Desktop\PRO\mod5.jpg"/>
+                    
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">-15%</span>
+                    </div>
+
+                    <div class="absolute top-3 right-[-50px] group-hover:right-3 transition-all duration-300 flex flex-col gap-2">
+                        <button class="p-2.5 bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/20 to-transparent">
+                        <button class="w-full bg-white/95 backdrop-blur-md py-3 rounded-xl text-xs font-bold text-gray-900 shadow-xl hover:bg-gray-900 hover:text-white transition-all uppercase tracking-tighter">
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <div class="flex justify-center text-yellow-400 mb-2">
+                        <span class="text-xs font-bold text-gray-400 mr-2 mt-0.5">4.8</span>
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+                        </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Smart Echo Speaker v4</h3>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="text-xl font-black text-gray-900">$79.00</span>
+                        <span class="text-sm text-gray-400 line-through">$95.00</span>
+                    </div>
+                    
+                    <button class="mt-5 w-full bg-gray-50 text-gray-900 py-3 rounded-xl text-sm font-bold border border-gray-100 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="group relative bg-white rounded-2xl p-4 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-transparent hover:border-gray-100">
+                <div class="relative overflow-hidden rounded-xl aspect-[4/5] bg-gray-100">
+                    <img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="C:\Users\sanja\OneDrive\Desktop\PRO\pop5.jpg"/>
+                    
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">-15%</span>
+                    </div>
+
+                    <div class="absolute top-3 right-[-50px] group-hover:right-3 transition-all duration-300 flex flex-col gap-2">
+                        <button class="p-2.5 bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/20 to-transparent">
+                        <button class="w-full bg-white/95 backdrop-blur-md py-3 rounded-xl text-xs font-bold text-gray-900 shadow-xl hover:bg-gray-900 hover:text-white transition-all uppercase tracking-tighter">
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <div class="flex justify-center text-yellow-400 mb-2">
+                        <span class="text-xs font-bold text-gray-400 mr-2 mt-0.5">4.8</span>
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+                        </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Smart Echo Speaker v4</h3>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="text-xl font-black text-gray-900">$79.00</span>
+                        <span class="text-sm text-gray-400 line-through">$95.00</span>
+                    </div>
+                    
+                    <button class="mt-5 w-full bg-gray-50 text-gray-900 py-3 rounded-xl text-sm font-bold border border-gray-100 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="group relative bg-white rounded-2xl p-4 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-transparent hover:border-gray-100">
+                <div class="relative overflow-hidden rounded-xl aspect-[4/5] bg-gray-100">
+                    <img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="C:\Users\sanja\OneDrive\Desktop\PRO\pop7.jpg"/>
+                    
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">-15%</span>
+                    </div>
+
+                    <div class="absolute top-3 right-[-50px] group-hover:right-3 transition-all duration-300 flex flex-col gap-2">
+                        <button class="p-2.5 bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/20 to-transparent">
+                        <button class="w-full bg-white/95 backdrop-blur-md py-3 rounded-xl text-xs font-bold text-gray-900 shadow-xl hover:bg-gray-900 hover:text-white transition-all uppercase tracking-tighter">
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <div class="flex justify-center text-yellow-400 mb-2">
+                        <span class="text-xs font-bold text-gray-400 mr-2 mt-0.5">4.8</span>
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
+                        </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Smart Echo Speaker v4</h3>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="text-xl font-black text-gray-900">$79.00</span>
+                        <span class="text-sm text-gray-400 line-through">$95.00</span>
+                    </div>
+                    
+                    <button class="mt-5 w-full bg-gray-50 text-gray-900 py-3 rounded-xl text-sm font-bold border border-gray-100 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            </div>
+    </div>
+</section>
+                <section class="hero">
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <span class="tag">Shoes Fashion</span>
+                <h1>Come and Get it!<br><strong>BRAND NEW SHOES</strong></h1>
+                <a href="#" class="btn-primary">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="C:\Users\sanja\OneDrive\Desktop\PRO\ex2.jpg" alt="Brand New Shoes">
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</section>
+ 
+            </main>
+            <footer></footer>
+         </div>
+         
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+     <script src="script.js"></script>
+        </body> 
+        </html>
