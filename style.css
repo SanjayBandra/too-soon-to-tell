@@ -1,0 +1,1380 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+h4{
+    font-size: 1em;
+    font-weight: var(--fw6);
+}
+
+/*font
+--*/
+.header-top{
+     font-family: 'Poppins',sans-serif;
+}
+.header-top a {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+
+.container {
+max-width: 1280px;
+margin: 0 auto;
+padding: 0 5px;
+}
+.column {
+margin-left: -0.938em;
+margin-right: -0.938em;
+}
+.column .row {
+padding: 0 0.938em;
+}
+.flexwrap {
+display: flex;
+flex-wrap: wrap;
+}
+.flexcenter {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.flexitem{
+display: flex;
+align-items: center;
+}
+.flexcol {
+display: flex;
+flex-direction: column;
+gap: 1em;
+}
+
+
+.main-links a:hover {
+     color: var(--secondary-color);
+     
+}
+
+
+.second-links a:hover { 
+    color: var(--light-text-color);
+}
+
+.icon-small, .icon-large {
+display: flex;
+align-items: center;
+padding: 0 0.25em;
+font-weight: normal;
+}
+
+.icon-small {
+font-size: 1.25em;
+margin-left: 4px;
+ display: inline-flex;
+ align-items: center;
+}
+.icon-large {
+font-size: 1.75em;
+padding: 0 0.75em 0 0;
+}
+.mobile-hide{
+    display: none;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.main-links a {
+     display: flex;
+     align-items: center;
+    gap: 4px;
+
+}
+a{ 
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header-top .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+/*HEADER 1
+a*/
+
+
+.header-top .wrapper {
+font-weight: var(--fw3);
+font-size: var(--font-small);
+justify-content: space-between;
+line-height: normal;
+padding: 10px 0;
+}
+
+.header-top .wrapper ul { 
+    gap: 2em;
+}
+.header-top li {
+position: relative;
+}
+
+/*DROPDOW*/
+
+
+
+ /*improve link styling at top*/
+.header-top a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.header-top a:hover {
+  color: #007bff;
+}
+/*till here*/
+/* DROPDOWN FIXED VERSION */
+
+.header-top li {
+  position: relative;
+}
+
+.header-top ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgb(198, 118, 32);
+  padding: 8px 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+.header-top ul ul li {
+  padding: 8px 16px;
+}
+
+.header-top ul ul li:hover {
+  background: #f5f5f5;
+}
+
+.header-top li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+/* HEADER
+*b
+ Header Nav*/
+ /*alignment os store , home etc
+ */
+ .header-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+ .left{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+ }
+ 
+ .header-nav .wrapper{
+    display: flex;
+    align-items: center;
+    }
+ /*navigation below the logo*/
+nav{
+    margin-top:0;
+    margin-left: 20px;
+}
+nav ul{
+    display:flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.second-links{
+    display:flex;
+    gap:25px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;/*LAYOUT CONTROL*/
+    justify-content: space-between;
+}
+.second-links{
+    display: flex;/*ALIGN NAVIGATION HORIZONTALLY*/
+    gap: 20px;
+    list-style: none;
+}
+.second-links li{
+    margin:0;
+    padding:0;
+}
+
+ /*navigation below the logo*/
+ .header-nav{
+     padding: 0.5em 0;
+     margin-bottom: 1.5em;
+     border-bottom: 1px solid var(--border-color);
+ }
+.trigger{
+     font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+
+}
+.logo a {
+    font-family: 'Poppins';
+     font-size: 1.75em;
+     position: relative;
+     font-weight: var(--fw8);
+     display: flex;
+     align-items: center;
+     padding:0.25em 0.5em ;
+     margin-right: 1em;
+     z-index: 1;
+}
+
+
+nav .second-links > li::after{
+    content:'';
+    position:absolute;
+    bottom:5px;
+    left:0;
+    width:0%;
+    height:2px;
+    background:#ff6b6b;
+    transition:1s;
+}
+
+nav .second-links > li:hover::after{
+    width:100%;
+}
+
+
+nav .second-links li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+     font-weight: 500;       /* font for second nav bar  */
+    color: #333;
+    padding: 10px 14px;
+    transition: 0.3s;
+}
+
+nav .second-links li a:hover{
+    color: #ff6b6b;
+}
+/* The 'Underline Grow' Effect */
+
+nav .second-links > li > a {
+position: relative;
+padding-bottom: 5px;
+}
+
+nav .second-links > li > a::after {
+content:"";
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 0;
+height: 2px;
+background: #ff6b6b; /*  accent color */
+transition: all 0.3s ease;
+transform: translateX(-50%);
+}
+
+nav .second-links > li:hover > a::after {
+width: 80%; 
+}
+/*Underline grows from*/
+
+
+
+/*better nav links */
+
+
+.header-nav{
+    position:sticky;
+    top:0;    /*nav stays fixed while scroll*/
+    z-index:1000;
+}
+
+.trigger{
+    font-size:1.5em;
+    cursor:pointer;
+    color:#5639eb;
+}
+
+
+/* CART SEGMENT*/
+.header-nav .right{
+margin-left: auto;
+align-items: center;
+gap: 25px;
+}
+
+.header-nav .right .icon-large{
+    position: relative;
+
+}
+.header-nav .right .fly-item{
+    top: 0;
+    right: 16px;
+    width: 16px;
+    background-color: #444;
+    border-radius: var(--percent50);
+}
+/* heart and cart alignments  */
+.header-nav .right ul{
+    display:flex;
+    align-items:center;
+    gap: 20px;
+}
+
+.icon-large{
+    font-size:22px;
+    color:#444;
+}
+
+.icon-large:hover{
+    color:#ea4545;
+}
+.icon-text{
+    margin-left:8px;
+}
+
+.mini-text{
+    font-size:12px;
+    color:#777;
+}
+
+.cart-total{
+    font-weight:600;
+}
+.iscart{
+    display: flex;
+    align-items: center;
+}
+/* till here */
+
+
+
+
+/* ========= ULTIMATE MEGA MENU FIX ========= */
+
+/* 1. Ensure the parent list item is the anchor point */
+nav .second-links > li.has-mega {
+    position: static; /* Important: keeps mega menu relative to the whole nav bar */
+}
+
+/* 2. Style the Mega Menu Container */
+  /*nav .mega { 
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background:rgba(255,255,255,0.95);
+     backdrop-filter: blur(10px);  /* blur behind menu  *
+    padding: 30px 0;
+    box-shadow: 0 20px 40px  rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.02);
+    border-radius: 0 0 15PX 15PX;
+    z-index: 1000;
+    border-top: 1px solid #eee;
+    opacity: 0;
+/* transistions *
+visibility: hidden;
+transform: translateY(15px); /* Starts 20px lower *
+transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* Professional 'Out-Quart easing *
+pointer-events: none; /* Prevents accidental triggers when hidden *
+}
+nav li:hover .mega{
+    display:block;
+}
+
+/* Trigger the animation on hover *
+
+nav li.has-mega:hover .mega {
+
+opacity: 1;
+visibility: visible;
+transform: translateY(0); /* Glides up to its position *
+pointer-events: auto;
+}
+
+/* 3. Show menu on hover *
+nav li.has-mega:hover .mega {
+    display: block;
+}
+
+/* 4. Fix the internal grid layout *
+.mega .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    /* This creates 4 equal columns *
+    grid-template-columns: repeat(3,0.8fr) 1.5fr; 
+    gap: 20px;
+    padding: 0 40px;
+    align-items: flex-start; /* Keeps titles at the top *
+}
+*/
+/* 1. Fix the Hover Gap */
+nav li.has-mega {
+    position: static;
+}
+
+/* 2. Style the Mega Menu Container */
+nav .mega {
+    display: block;
+    position: absolute;
+    top: 80%; /* If it still disappears, try 95% to overlap slightly */
+    left: 0;
+    width: 100%;
+    background: rgba(230, 230, 230, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 50px 0 40px;
+    box-shadow: 0 20px 50px rgb(32, 92, 135);
+    border-radius: 0 0 15px 15px;
+    z-index: 1000;
+    border-top: 1px solid #000000;
+    
+    /* Animation States */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    pointer-events: none;
+}
+/* Ensure the container is the reference point for the text */
+.mega .products .row {
+    position: relative; /* This allows us to pin the text to the image corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Style the "Trending" text */
+.mega .products h4.trending-text { 
+    position: absolute;
+    top: 15px;        /* Distance from top of image */
+    left: 15px;       /* Distance from left of image */
+    margin: 0;
+    z-index: 5;       /* Keeps it above the image */
+    font-family: 'Playfair Display', serif; /* Use a serif font  */
+    font-size: 2.8rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    
+  
+}
+
+/* Adjust the Explore button to sit below the image properly */
+.mega .products .liquid-morph-container {
+    margin-top: 20px;
+}
+
+/* Trigger */
+nav li.has-mega:hover .mega {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* 3. Decrease distance between columns */
+.mega .wrapper {
+    max-width: 1000px; /* Reduced from 1200px to bring columns closer */
+    margin: 0 auto;
+    display: grid;
+    /* Changed to 1fr 1fr 1fr 1.5fr to give the image more room but keep text tight */
+    grid-template-columns: 150px 150px 150px 1fr; 
+    gap: 60px;
+    padding: 0 20px;
+    align-items: start;
+}
+/* Initial state for links */
+.mega .flexcol ul li {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 1s ease;
+}
+
+/* Slide in links when parent is hovered */
+nav li.has-mega:hover .mega .flexcol ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Staggered delays */
+nav li.has-mega:hover .mega .flexcol ul li:nth-child(1) { transition-delay: 0.1s; }
+nav li.has-mega:hover .mega .flexcol ul li:nth-child(2) { transition-delay: 0.15s; }
+nav li.has-mega:hover .mega .flexcol ul li:nth-child(3) { transition-delay: 0.2s; }
+nav li.has-mega:hover .mega .flexcol ul li:nth-child(4) { transition-delay: 0.25s; }
+nav li.has-mega:hover .mega .flexcol ul li:nth-child(5) { transition-delay: 0.3s; }
+
+/* Enhanced Hover Effect for Links */
+.mega .flexcol ul li a {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.mega .flexcol ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ff6b6b;
+    transition: width 0.3s ease;
+}
+
+.mega .flexcol ul li a:hover::after {
+    width: 100%;
+}
+/* 5. Style the column content */
+.mega .flexcol h4 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.mega .flexcol ul {
+    display: flex;
+    flex-direction: column; /* Force links to stack vertically */
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.mega .flexcol ul li a {
+    padding: 0 !important; /* Remove the padding from your nav links */
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+
+.mega .flexcol ul li a:hover {
+    color: #ff6b6b;
+    padding-left: 5px !important; /* Subtle shift on hover */
+}
+
+/* 6. Fix for the 'Most Wanted' / Product column */
+.mega .products .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mega .primary-button {
+    background: #333;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+    justify-content: flex-start;
+}
+
+
+/* order css */
+
+.liquid-morph-element {
+  width: 200px;
+  height: 70px;
+  background: #0a2342;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.liquid-morph-element span {
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.liquid-morph-element::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #0ff 0deg, 
+    #0a2342 120deg, 
+    #0ff 240deg
+  );
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.liquid-morph-element:hover {
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
+
+.liquid-morph-element:hover::before {
+  opacity: 0.5;
+  transform: scale(2);
+}
+/* till here  */
+
+
+
+
+/* most wanted image  */
+
+.gallery {
+  --g: 8px; /* the gap */
+  
+  display: grid;
+  clip-path: inset(1px); /* to avoid visual glitchs */
+}
+.gallery > img {
+  --_p: calc(-1*var(--g));
+  grid-area: 1/1;
+  width: 250px; /* control the size */
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: .4s .1s;
+}
+.gallery > img:first-child {
+  clip-path: polygon(0 0, calc(100% + var(--_p)) 0 , 0 calc(100% + var(--_p)))
+}
+.gallery > img:last-child {
+  clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
+}
+.gallery:hover > img:last-child,
+.gallery:hover > img:first-child:hover{
+  --_p: calc(50% - var(--g));
+}
+.gallery:hover > img:first-child,
+.gallery:hover > img:first-child:hover + img{
+  --_p: calc(-50% - var(--g));
+}
+
+/* till here */
+
+/*slider
+.slider > div > .wrapper{
+    width: calc(100% - (300px + 2em));
+    margin-left: auto;
+}
+.slider .item {
+    position: relative;
+    height: 474px;
+}
+.slider .text-content{
+    position: relative;
+    height: 100%;
+
+    padding: 0 0 10% 10%;
+    z-index: 1;
+}
+.slider h4{
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    width: fit-content;
+    padding: 4px 10px;
+
+}*/
+/* Ensure the parent is the reference point */
+/* Ensure the outer wrapper occupies the right-hand side correctly */
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+.slider > div > .wrapper {
+    width: calc(100% - 300px);
+    margin-left:320px;
+    padding: 0;
+}
+
+/* 1. The Container: Must be Relative */
+.slider .item {
+    position: relative;
+    height:100%; 
+    width: 100%;
+    overflow: hidden; 
+    border-radius: 10px;
+    display: flex; /* Helps align the text content */
+    align-items: center; 
+}
+
+/* 2. The Image: MUST BE ABSOLUTE to sit behind the text */
+.slider .item .image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+
+.slider .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+        max-width: 100%; 
+     filter: drop-shadow(20px 20px 30px rgb(6, 91, 90));
+}
+
+/* 3. The Text Content: Sits on top of the absolute image */
+.slider .text-content {
+    position: relative;
+    z-index: 2; /* Higher than the image z-index */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px; /* Adjust padding to match your style */
+    
+    /* This creates the dark fade behind the text for a pro look */
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 40%, transparent 100%);
+    pointer-events: none; /* Allows clicks to pass through to the button */
+}
+
+/* 4. Professional Typography Styling */
+.slider .text-content h4 {
+    background-color: #222; /* Black tag like the Adidas example */
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 12px;
+    width: fit-content;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    pointer-events: auto; /* Makes it interactive if needed */
+}
+
+.slider .text-content h2 {
+    color: #fff;
+    font-size: 2.5rem; /* Bigger for a premium feel */
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 20px 0;
+    text-transform: capitalize;
+    /* Replace with Poppins if you use Google Fonts */
+}
+
+/* 5. The Button */
+.primary-button {
+    pointer-events: auto; /* Ensures the button remains clickable */
+    background-color: #ff4d4d;
+    color: white;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    width: fit-content;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.primary-button:hover {
+    background-color: #ffffff;
+    color: #ff4d4d;
+    transform: scale(1.05);
+     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(189, 35, 35, 0.862);
+
+}
+.text-content :where(h2,h3) span:first-child{
+    font-weight: var(--fw3);
+    columns: var(--secondary-dark-color);
+}
+.text-content :where(h2,h3) span:last-child{
+    color: var(--secondary-dark-color);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.icon-large{
+    position: relative;
+    font-size: 22px;
+    color: #444;
+}
+
+.hero {
+    background-color: #f2f3f5; /* Light grey like the image */
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    min-height: 450px;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 1;
+}
+
+.hero-content .tag {
+    background: #000;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    line-height: 1.1;
+    color: #222;
+}
+
+.hero-content h1 strong {
+    display: block;
+    color: #2b3445;
+    font-weight: 800;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #ff6b6b; /* Matching your accent color */
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(189, 35, 35, 0.862);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 70%; 
+    filter: drop-shadow(20px 20px 30px rgb(6, 91, 90));
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+
+.slider-dots span {
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.slider-dots span.active {
+    background: #444;
+    width: 20px;
+    border-radius: 10px;
+}
+/* Counter badge */
+
+
+/* 1. The Main Department Menu 
+.dpt-menu {
+    width: 300px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    /* HIDDEN BY DEFAULT: Toggle this with 'show' class or JS 
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Use this class to show the menu when the trigger is clicked *
+.dpt-menu.show {
+    display: block;
+}
+
+/* 2. THE CRITICAL FIX: Make the LI the anchor for the sub-menu *
+.dpt-menu .second-links > li {
+    position: relative; /* This makes the sub-menu stay next to the text *
+    list-style: none;
+}
+
+/* 3. The Sub-Menu (Sub-parts) *
+.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Perfectly to the right *
+    width: 250px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 15px 0 30px rgba(0,0,0,0.05);
+    padding: 10px 0;
+    
+    /* Animation & Visibility *
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(15px);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 2000;
+}
+
+/* Show Sub-parts on Hover *
+.has-child:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+.sub-menu li a {
+    font-family: 'Playfair Display', serif; /* Editorial classy font *
+    font-size: 15px;
+    color: #444;
+    padding: 10px 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sub-menu li a:hover {
+    color: #ea4545;
+    background: #fff8f8;
+    padding-left: 30px; /* Elegant slide effect *
+}
+/* The Red Box container *
+.dpt-cat .dpt-head {
+    position: relative;
+    width: 300px;
+    padding: 15px 20px;
+    background-color: #ea4545; /* Your theme red *
+    border-radius: 7px 7px 0 0;
+    color: #ffffff; /* White text so it shows on red *
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* The actual Icon styling *
+.dpt-cat .dpt-trigger {
+    font-size: 24px; /* Makes the icon big enough to see *
+    color: #ffffff;  /* Forced white icon *
+    display: flex;
+    align-items: center;
+}
+/* HEADER */
+/* HEADER main department category *
+.header-main{
+     background-color: #58adbafa;
+     padding: 1.5em 0;
+     margin-bottom: 2em;
+}
+.dpt-cat {
+     position: relative;
+     z-index: 10;
+}
+.dpt-cat .dpt-head {
+    position: relative;
+    width: 300px;
+    padding: 0.75em 1.5em;
+    background-color: #fe9494;
+     border-radius: 7px 7px 0 0;
+     color:#007bff;
+     margin-bottom: -2.15em;
+}
+
+
+.dpt-cat .dpt-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.3em;
+    height: 60px;
+    width: 60px;
+}
+
+*/
+/* Department Menu Container */
+.header-main {
+    background-color: #2b3445; /* Dark background from image */
+    padding: 15px 0;
+    color: #b02323;
+     margin-bottom: 2em;
+}
+     .dpt-cat {
+     position: relative;
+     z-index: 10;
+     }
+     .dpt-cat .dpt-head {
+    position: relative;
+    width: 300px;
+    padding: 0.75em 1.5em;
+    background-color: #fe9494;
+     border-radius: 7px 7px 0 0;
+     color:#007bff;
+     margin-bottom: -2.15em;
+     top: 200%;
+}
+.dpt-cat .dpt-trigger {
+   
+    color: #ffffff;  /* Forced white icon */
+    display: flex;
+    align-items: center;
+     position: absolute;
+    right: 0;
+    top: 1;
+    padding: 1.3em;
+    height: 60px;
+    width: 60px
+}
+.dpt-menu > ul > li > a{
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+
+}
+
+/*.dpt-menu {
+    width: 300px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    border-top: 0;
+    border-bottom: 0;*/
+
+.dpt-menu {
+    width: 300px;
+    background: #fff;
+    border: 3px solid #eee;
+    border-top: 0;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 700%;
+   
+}
+
+.dpt-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /*  list items stack vertically */
+}
+
+.dpt-menu li {
+    position: relative;
+    border-bottom: 1px solid #7b4c4c;
+}
+
+.dpt-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.dpt-menu > ul > li > a{
+    font-weight: var(--fw5);
+    padding: 0 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.dpt-menu li:hover > a {
+
+    background: #6898e6;
+    color: #001741; /* Matches your header theme */
+    padding-left: 25px; /* Subtle slide effect */
+}
+
+/* Icon Spacing */
+.icon-large {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #777;
+    transition: color 0.3s;
+}
+
+.dpt-menu li:hover .icon-large {
+    color: #000000;
+}
+
+/* Submenu - Professional "Slide & Fade" */
+.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 180px;
+    
+    background-image: url(https://i.pinimg.com/736x/89/ec/c1/89ecc1436c078ab57aec9e6c3e42811e.jpg);
+
+    border: 4px solid #eee;
+    box-shadow: 15px 15px 30px rgb(119, 154, 250);
+    z-index: 1000;
+    
+    /* Initial state for animation */
+    display: block; 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    pointer-events: none;
+}
+
+.has-child:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* HEADER SEARCH FORM */
+.header-main .right{
+    flex: 1;
+}
+form{
+        position: relative;
+    }
+form.search input {
+        line-height: 3.25em;
+        padding: 0 7em 0 4.5em;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        border-radius: 7px;
+        font-size: 0.9em;
+        font-weight: var(--fw3);
+    }
+form.search :where(span,button){
+position: absolute;
+top: 0;
+padding: 0.55em 1.5em;
+font-size: 1em;
+color: coral;
+height:100%;
+    }
+form.search button{
+        right: 0;
+        border:0;
+        outline:0;
+        font-size: 0.875em;
+        font-weight: var(--fw6);
+        background-color: #ea4545;
+        color: #f5f5f5;
+        border-radius: 0 7px 7px 0;
+        cursor: pointer;
+        transition: var(--trans-background);
+        padding: 0 30PX;
+
+    }
+ form.search button:hover{
+      background-color: #5b0303;
+
+    }
+
+
+.dpt-head {
+    background-color: #ff6b6b; /* Salmon/Coral header for departments */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 7px 7px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+body, html {
+   font-family: 'Roboto Slab', serif;
+    margin: 0;
+  width: 100%;
+height: 100%;
+    padding: 0;
+}
+.brands .item img {
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.brands .item a:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.brands .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers items vertically */
+    gap: 90px;           /* Adjust this to set your desired equal gap */
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+.brands .item img {
+    height: auto;
+    max-width: 120px;
+    opacity: 0.25;
+    /* Smooth transition for both opacity and size */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: block;
+}
+
+.brands .item a:hover img {
+    opacity: 1;
+    /* Scale up slightly on hover */
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* products style */
+.sectop {
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--border-color);
+}
+.sectop h2 {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: var(--fw7);
+
+}
+.sectop h2 span:not(.circle){
+    padding: 0 0 0 2em;
+}
+.sectop h2 .circle{
+    top: -5px;
+}
+
+.trending .products {
+    flex: 0 0 33.3333%;
+}
+/* PRODUCT */
+/* GLOBAL PRODUCT */
+.products .offer {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/*15. RESPOSIVE*/
+@media screen and (min-width: 992px){
+    .container{
+         padding: 0 2em;
+        
+    }
+    .desktop-hide{
+        display: none;
+    }
+    .mobile-hide{
+        display: block;
+    }
+    .logo a {
+margin-right: 2em;
+    }
+    .header-nav{
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+.header-nav .right li > a {
+ margin-left: 1em;
+}
+.header-main .right{
+      max-width: 600px;
+      margin-left: auto;
+}
+
+.dpt-menu .beauty ul {
+    background-image: url(https://i.pinimg.com/736x/89/ec/c1/89ecc1436c078ab57aec9e6c3e42811e.jpg);
+}
+.dpt-menu .beauty ul {
+    background-image: url(https://i.pinimg.com/736x/89/ec/c1/89ecc1436c078ab57aec9e6c3e42811e.jpg);
+}
+.dpt-menu .beauty ul {
+    background-image: url(https://i.pinimg.com/736x/89/ec/c1/89ecc1436c078ab57aec9e6c3e42811e.jpg);
+}
+.dpt-menu .beauty ul {
+    background-image: url(https://i.pinimg.com/736x/89/ec/c1/89ecc1436c078ab57aec9e6c3e42811e.jpg);
+}
+.dpt-menu .beauty ul {
+    background-image: url(https://i.pinimg.com/736x/89/ec/c1/89ecc1436c078ab57aec9e6c3e42811e.jpg);
+}
+} 
